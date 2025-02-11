@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #fff0f3, #fadadd);
+  margin: 0;
+}
+
+/* Heading */
+.heading {
+  font-family: "Lobster", cursive;
+  font-size: 45px;
+  color: #d37b93;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  animation: bounce 2s infinite alternate ease-in-out;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Teddy Bear */
+.bear {
+  position: relative;
+  width: 180px;
+  height: 250px;
+}
+
+/* Ears */
+.ear {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: radial-gradient(circle, #f4c2c2, #e8a9b5);
+  border-radius: 50%;
+  top: 0;
+  z-index: 1;
+}
+
+.left-ear {
+  left: 10px;
+}
+
+.right-ear {
+  right: 10px;
+}
+
+/* Inner ears */
+.inner-ear {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #fbe4e6;
+  border-radius: 50%;
+  top: 12px;
+  z-index: 2;
+}
+
+.left-inner-ear {
+  left: 20px;
+}
+
+.right-inner-ear {
+  right: 20px;
+}
+
+/* Head */
+.head {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #f5b5b5, #e8a9b5);
+  border-radius: 50%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Eyes */
+.eye {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: black;
+  border-radius: 50%;
+  top: 32px;
+}
+
+.left-eye {
+  left: 25px;
+}
+
+.right-eye {
+  right: 25px;
+}
+
+/* Nose */
+.nose {
+  position: absolute;
+  width: 18px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Mouth */
+.mouth {
+  position: absolute;
+  width: 28px;
+  height: 12px;
+  background: #a35a6d;
+  border-radius: 50%;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Blush */
+.blush {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  background: rgba(255, 182, 193, 0.5);
+  border-radius: 50%;
+  top: 55px;
+}
+
+.left-blush {
+  left: 10px;
+}
+
+.right-blush {
+  right: 10px;
+}
+
+/* Body */
+.body {
+  position: absolute;
+  width: 110px;
+  height: 130px;
+  background: radial-gradient(circle, #f5b5b5, #e8a9b5);
+  border-radius: 50%;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Belly */
+.belly {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background: #fbe4e6;
+  border-radius: 50%;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+/* Arms */
+.arm {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background: radial-gradient(circle, #f5b5b5, #e8a9b5);
+  border-radius: 50%;
+  top: 110px;
+  z-index: 1;
+}
+
+.left-arm {
+  left: -15px;
+  transform-origin: right center;
+  animation: hug 2s infinite alternate ease-in-out;
+}
+
+.right-arm {
+  right: -15px;
+  transform-origin: left center;
+  animation: hug 2s infinite alternate ease-in-out;
+}
+
+/* Legs */
+.leg {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background: radial-gradient(circle, #f5b5b5, #e8a9b5);
+  border-radius: 50%;
+  top: 200px;
+}
+
+.left-leg {
+  left: 40px;
+}
+
+.right-leg {
+  right: 40px;
+}
+
+/* Hug Animation */
+@keyframes hug {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
